@@ -1,0 +1,158 @@
+
+ <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="48dip"
+        android:background="@drawable/bg_header"
+        android:gravity="center"
+        android:text="联系人"
+        android:textColor="#ffffffff"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+    
+    <ImageView 
+        android:id="@+id/refresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:src="@drawable/ic_cached_black_48dp"/>
+
+    <ImageView 
+        android:id="@+id/add_contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:src="@drawable/ic_add_black_48dp"/>
+    
+    <LinearLayout
+        android:id="@+id/search_layout"
+        android:layout_below="@id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/search_field"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="                     搜索" />
+
+        <Button
+            android:id="@+id/search_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="搜索" />
+    </LinearLayout>
+    
+    <RelativeLayout android:id="@+id/rl_addFriend"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="14dp"
+       android:layout_below="@id/search_layout"
+       android:gravity="center_vertical"
+       android:clickable="true"
+       android:focusable="true"
+       android:background="@drawable/preference_single_item">
+        
+      		<ImageView android:id="@+id/add_friend"
+            	android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"        	     	
+        		android:scaleType="matrix"
+        		android:layout_centerVertical="true"
+        		android:layout_alignParentLeft="true"
+        		android:src="@drawable/find_more_friend_addfriend_icon" />
+      		    
+            <TextView android:layout_width="wrap_content" 
+        		android:layout_height="wrap_content"
+        		android:layout_toRightOf="@id/add_friend"
+        		android:layout_centerVertical="true"
+        		android:padding="8dp" 
+        		android:text="添加朋友"
+        		android:textSize="17sp"		
+				android:textColor="#000" /> 
+				
+			<ImageView android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"        	     	
+        		android:scaleType="matrix"
+        		android:layout_centerVertical="true"
+        		android:layout_alignParentRight="true"
+        		android:src="@drawable/mm_submenu_normal" />      					
+   		</RelativeLayout>
+   		
+		<RelativeLayout android:id="@+id/rl_new"
+		    android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:layout_below="@id/rl_addFriend"
+            android:gravity="center_vertical"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="@drawable/preference_single_item"
+            android:onClick="btn_shake" >
+      		<ImageView
+      		    android:id="@+id/add_friend_shake"
+            	android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"        	     	
+        		android:scaleType="matrix"
+        		android:layout_centerVertical="true"
+        		android:layout_alignParentLeft="true"
+        		android:src="@drawable/message" />    
+            <TextView
+        		android:layout_width="wrap_content" 
+        		android:layout_height="wrap_content"
+        		android:layout_toRightOf="@id/add_friend_shake"
+        		android:layout_centerVertical="true"
+        		android:padding="8dp" 
+        		android:text="新消息"
+        		android:textSize="17sp"		
+				android:textColor="#000" /> 
+			<ImageView
+            	android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"        	     	
+        		android:scaleType="matrix"
+        		android:layout_centerVertical="true"
+        		android:layout_alignParentRight="true"
+        		android:src="@drawable/mm_submenu_normal" />      					
+   		</RelativeLayout>
+
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_new"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:dividerHeight="0.0px"
+        android:fadingEdgeLength="0dip"
+        android:listSelector="@null"
+        android:scrollbars="none" />
+
+    <com.example.baidumapmotiontrack.view.AlphaView
+        android:id="@+id/alphaView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/search_layout"
+        android:layout_marginTop="5dip" />
+
+    <TextView
+        android:id="@+id/empty_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="#9A212121"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+</RelativeLayout>

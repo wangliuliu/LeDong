@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical" >
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#111111">
+        <TextView 
+            android:id="@+id/record_total_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="18dp"
+            android:text="总里程0KM"/>
+        <TextView 
+            android:id="@+id/record_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+             android:paddingRight="16dp"
+             android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="18dp"
+            android:text="共0条记录"/>
+    </RelativeLayout>
+    
+    <ListView 
+        android:id="@+id/record_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#171717">
+    </ListView>
+
+</LinearLayout>

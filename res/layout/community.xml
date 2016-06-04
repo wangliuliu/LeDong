@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp" >
+
+            <ImageView
+                android:id="@+id/to_contacts_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="10dp"
+                android:src="@drawable/ic_account_child_white_36dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="跑友圈"
+                android:textColor="#ffffff"
+                android:textSize="28sp" />
+
+            <ImageView
+                android:id="@+id/to_chat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:paddingRight="10dp"
+                android:src="@drawable/ic_question_answer_white_36dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/to_myfriend"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="25sp"
+            android:background="#222222" >
+
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/ic_account_child_white_36dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80dp"
+                android:layout_centerVertical="true"
+                android:text="我的朋友"
+                android:textColor="#ffffff"
+                android:textSize="22sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_keyboard_arrow_right_white_36dp" />
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:id="@+id/rl_addfriend"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5sp"
+            android:background="#222222" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/ic_account_child_white_36dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80dp"
+                android:layout_centerVertical="true"
+                android:text="添加朋友"
+                android:textColor="#ffffff"
+                android:textSize="22sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_keyboard_arrow_right_white_36dp" />
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:id="@+id/rl_newinform"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5sp"
+            android:background="#222222" >
+
+            <ImageView
+                android:id="@+id/img3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/ic_account_child_white_36dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80dp"
+                android:layout_centerVertical="true"
+                android:text="新的通知"
+                android:textColor="#ffffff"
+                android:textSize="22sp" />
+            
+            <TextView 
+                android:id="@+id/tv_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="270dp"
+                android:layout_centerVertical="true"
+                android:text="1"
+                android:textSize="18sp"
+                android:textColor="#FF0000"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_keyboard_arrow_right_white_36dp" />
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:id="@+id/rl_chatrecord"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5sp"
+            android:background="#222222" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/ic_account_child_white_36dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80dp"
+                android:layout_centerVertical="true"
+                android:text="聊天记录"
+                android:textColor="#ffffff"
+                android:textSize="22sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_keyboard_arrow_right_white_36dp" />
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:id="@+id/to_moment"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5sp"
+            android:background="#222222" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/ic_settings_input_svideo_white_24dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80dp"
+                android:layout_centerVertical="true"
+                android:text="跑友动态"
+                android:textColor="#ffffff"
+                android:textSize="22sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_keyboard_arrow_right_white_36dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <com.example.baidumapmotiontrack.view.BottomLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

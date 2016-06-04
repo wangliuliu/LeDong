@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.baidumapmotiontrack"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <application
+        android:name="com.example.baidumapmotiontrack.application.MyApp"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="Ra240WBcGv7C1pdpBthaZeS1zw74zFxF" />
+
+        <activity
+            android:name="com.example.baidumapmotiontrack.activity.LoginActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.baidumapmotiontrack.activity.RunActivity"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="com.example.baidumapmotiontrack.activity.MineActivity"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity android:name="com.example.baidumapmotiontrack.activity.RegisterActivity" >
+        </activity>
+        <activity android:name="com.example.baidumapmotiontrack.activity.RunRecordActivity" >
+        </activity>
+        <activity android:name="com.example.baidumapmotiontrack.activity.MomentActivity" >
+        </activity>
+        <activity android:name="com.example.baidumapmotiontrack.activity.WriteMomentActivity" >
+        </activity>
+        <activity
+            android:name="com.example.baidumapmotiontrack.activity.NewsActivity"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity android:name="com.example.baidumapmotiontrack.activity.NewsContentActivity" >
+        </activity>
+        <activity android:name="com.example.baidumapmotiontrack.activity.AddFriendActivity" >
+        </activity>
+        <activity android:name="com.example.baidumapmotiontrack.activity.FriendsMainActivity" >
+        </activity>
+        <activity android:name="com.example.baidumapmotiontrack.activity.RequestNewActivity" >
+        </activity>
+        <activity android:name="com.example.baidumapmotiontrack.activity.UserInfoActivity" >
+        </activity>
+        <activity
+            android:name="com.example.baidumapmotiontrack.activity.CommunityActivity"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity android:name="com.example.baidumapmotiontrack.activity.ChatActivity" >
+        </activity>
+        <activity android:name="com.example.baidumapmotiontrack.activity.ChatRecordActivity" >
+        </activity>
+        <activity android:name="com.example.baidumapmotiontrack.activity.NoInformActivity" >
+        </activity>
+        <activity
+            android:name="com.example.baidumapmotiontrack.activity.MoreActivity"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity android:name="com.example.baidumapmotiontrack.activity.SendVerifyNewsActivity" >
+        </activity>
+        <activity android:name="com.example.baidumapmotiontrack.activity.AddFriendInfo" >
+        </activity>
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+        </service>
+        <service android:name="com.example.baidumapmotiontrack.service.RouteRecordService" >
+        </service>
+        <service android:name="com.example.baidumapmotiontrack.service.LocationService" >
+        </service>
+    </application>
+
+</manifest>
